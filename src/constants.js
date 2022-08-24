@@ -3,7 +3,7 @@
  **********************************************************************************************************************/
 
 // Strings
-const APPLICATION_NAME = 'Voice Desktop';
+const APPLICATION_NAME = 'Google Chat';
 
 // Images
 const APPLICATION_ICON_LARGE                = '1024px-Google_Voice_icon_(2020).png';
