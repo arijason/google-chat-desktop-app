@@ -1,5 +1,8 @@
 ## Why
-I'm annoyed at the lack of desktop app for voice, like hangouts had.
+This is a clone of the google-voice-desktop app, except I've replaced voice.google.com with chat.google.com.
+This way I can run both voice.google.com and chat.google.com with 2 separate accounts and 2 separate notifications.
+
+I've also changed the icon to the old Hangouts icon to differentiate between the two.
 
 ## What does it do
 It just lets you keep voice open without a chrome browser. It will also check the dom for notifications and display a badge in the task bar and closing the app will send it to a tray instead of closing.
