@@ -212,7 +212,7 @@ function createWindow() {
         // stuck navigated somewhere that isn't the main Google Voice page, they can always use the "Reload"
         // item in the notification area icon context menu to get back to the Google Voice home page.
         const hostName = Url.parse(url).hostname;
-        if ( hostName === 'voice.google.com' || hostName === 'accounts.google.com') {
+        if ( hostName === 'chat.google.com' || hostName === 'accounts.google.com') {
             win && win.loadURL(url);
         }
         else {
