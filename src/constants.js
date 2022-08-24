@@ -12,7 +12,7 @@ const APPLICATION_ICON_SMALL                = 'tray-Google_Voice_icon_(2020).png
 const APPLICATION_ICON_SMALL_WITH_INDICATOR = 'tray-dirty-Google_Voice_icon_(2020).png';
 
 // URLs
-const URL_GOOGLE_VOICE           = 'https://voice.google.com'
+const URL_GOOGLE_VOICE           = 'https://chat.google.com'
 const URL_GITHUB_README          = 'https://github.com/jerrod-lankford/google-voice-desktop-app/blob/master/README.md'
 const URL_GITHUB_SECURITY_POLICY = 'https://github.com/jerrod-lankford/google-voice-desktop-app/blob/master/SECURITY.md'
 const URL_GITHUB_VIEW_ISSUES     = 'https://github.com/jerrod-lankford/google-voice-desktop-app/issues';
