@@ -281,7 +281,7 @@ function updateNotifications(app) {
     }
 
     let sum = 0;
-
+/*
     // Query the dom for the notification badges
     win.webContents.executeJavaScript(`Array.from(document.querySelectorAll('.gv_root .navListItem .navItemBadge')).map(n => n.textContent && n.textContent.trim());`).then(counts => {
         if (counts && counts.length > 0) {
@@ -293,8 +293,53 @@ function updateNotifications(app) {
             }, 0);
         }
 
-        processNotificationCount(app, sum);
+        //processNotificationCount(app, sum);
     });
+*/	
+
+// This displays a message.  
+//win.webContents.executeJavaScript("alert('Hello There!');");
+var mytest = "this is test";
+// This displays on the console when running with yarn start
+//console.log(mytest);
+
+
+/*
+win.webContents.executeJavaScript(`document.querySelector('input[name="fb_dtsg"]').value`, function (result) {
+  console.log(result)
+})
+*/
+/*
+win.webContents.executeJavaScript(`function gethtml () {
+    return new Promise((resolve, reject) => { resolve(document.documentElement.innerHTML); });
+    }
+    gethtml();`).then((html) => {
+    console.log(html)
+  })
+*/
+//win.webContents.executeJavaScript(`Array.from(document.body.innerHTML).map(n => n.textContent && n.textContent.trim());`);
+//win.webContents.executeJavaScript("alert(n);");
+/*
+	let result = "";
+	let fulltext = "";
+// setImage works (if I change both to Dirty, the taskbar icon will change 3 seconds after the program opens.
+// I don't think we're finding the string we're looking for.  I can't see what's in document.body.innerHTML.
+//win.webContents.executeJavaScript(`Array.from(document.body.innerHTML).map(n => n.textContent && n.textContent.trim());`).then(text => {
+win.webContents.executeJavaScript(`document.getElementsByTagName('html')[0].innerHTML.map(n => n.textContent && n.textContent.trim());`).then(text => {
+//	win.webContents.executeJavaScript("alert('Hello There!' + text + 'done');");
+	fulltext = text[0];
+	console.log(fulltext);
+//	result = text.match(/1 new message/g);
+        if (result && result.length >0) {
+			tray && tray.setImage(iconTrayDirty);
+		}else{
+			tray && tray.setImage(iconTray);
+        }
+
+        //processNotificationCount(app, sum);
+});
+	*/
+	
 
     // The following is a workaround for the Electron bug where after an indeterminate
     // period of inactivity, the main application window turns into a blank white screen.
